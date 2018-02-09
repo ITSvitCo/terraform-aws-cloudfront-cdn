@@ -199,3 +199,11 @@ variable "cache_behavior" {
   description = "List of cache behaviors to implement"
   default     = []
 }
+
+variable "minimum_protocol_version" {
+  default = "TLSv1"
+}
+
+variable "cloudfront_default_certificate" {
+  default = "true"
+}
