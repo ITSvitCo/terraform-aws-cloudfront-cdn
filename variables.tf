@@ -82,6 +82,8 @@ variable "origin_read_timeout" {
   default     = "60"
 }
 
+variable "origin_id" {}
+
 variable "compress" {
   description = "(Optional) Whether you want CloudFront to automatically compress content for web requests that include Accept-Encoding: gzip in the request header (default: false)"
   default     = "false"

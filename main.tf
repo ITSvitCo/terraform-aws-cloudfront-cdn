@@ -55,7 +55,7 @@ resource "aws_cloudfront_distribution" "default" {
 
   origin {
     domain_name = "${var.origin_domain_name}"
-    origin_id   = "${module.distribution_label.id}"
+    origin_id   = "${var.origin_id}"
     origin_path = "${var.origin_path}"
 
     custom_origin_config {
